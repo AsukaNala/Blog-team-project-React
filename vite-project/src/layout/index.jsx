@@ -11,7 +11,7 @@ const Root = styled("div")(() => ({
 }));
 
 const Main = styled("main")(() => ({
-  flex: 1,
+  flex: 2,
   display: "flex",
   flexDirection: "column",
 }));
@@ -21,9 +21,8 @@ const Layout = () => {
     <Root>
       <Header />
       <Main>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            Content
+        <Grid container spacing={2} columns={{ xs: 4, md: 12 }}>
+          <Grid item xs={6} md={8}>
             <Outlet />
           </Grid>
         </Grid>
