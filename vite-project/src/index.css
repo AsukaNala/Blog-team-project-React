@@ -2,3 +2,8 @@ html,
 body {
   height: 100%;
 }
+
+.active {
+  opacity: 0.5;
+  pointer-events: none;
+}
